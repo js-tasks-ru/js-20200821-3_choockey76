@@ -11,7 +11,8 @@ export function createGetter(path) {
         if (!obj) {
           return;
         }
-          obj = obj[item];
+        
+        obj = obj[item];
       })
       
       return obj;
