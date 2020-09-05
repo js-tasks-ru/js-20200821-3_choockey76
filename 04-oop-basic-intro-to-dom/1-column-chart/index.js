@@ -1,5 +1,5 @@
 export default class ColumnChart {
-    subElements = {}; // HTMLElement;
+  subElements = {}; // HTMLElement;
     chartHeight = 50;
   
     constructor({data=[], label='', value = 0, link = ''} = {}) {
@@ -85,6 +85,5 @@ export default class ColumnChart {
       this.remove();
       this.element = null;
       this.subElements = {}
-      // additionally needed to remove all listeners...
     }
-  }
+}
