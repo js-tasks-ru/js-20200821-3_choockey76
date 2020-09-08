@@ -1,5 +1,5 @@
 export default class NotificationMessage {
-  array = []
+
   constructor(message = '', {duration = 0, type=''} = {}) {
 
     if (NotificationMessage.visibleElem) {
@@ -30,6 +30,7 @@ export default class NotificationMessage {
       element.innerHTML = this.getTemplate();
 
       this.element = element.firstChild;
+      
       NotificationMessage.visibleElem = this.element;
   }
 
